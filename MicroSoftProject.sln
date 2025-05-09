@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroSoftContract", "MicroS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroSoftTests", "MicroSoftTests\MicroSoftTests.csproj", "{26DA88F5-6C90-465A-B4F2-F8AFCFA12435}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroSoftBusinessLogic", "MicroSoftBusinessLogic\MicroSoftBusinessLogic.csproj", "{3FABC8A9-CBB5-4AC1-867C-ED7DC5165906}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{26DA88F5-6C90-465A-B4F2-F8AFCFA12435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26DA88F5-6C90-465A-B4F2-F8AFCFA12435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26DA88F5-6C90-465A-B4F2-F8AFCFA12435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FABC8A9-CBB5-4AC1-867C-ED7DC5165906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FABC8A9-CBB5-4AC1-867C-ED7DC5165906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FABC8A9-CBB5-4AC1-867C-ED7DC5165906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FABC8A9-CBB5-4AC1-867C-ED7DC5165906}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
