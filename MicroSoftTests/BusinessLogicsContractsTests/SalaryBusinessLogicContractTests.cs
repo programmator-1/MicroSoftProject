@@ -27,8 +27,8 @@ internal class SalaryBusinessLogicContractTests
         _salaryBusinessLogicContract = new SalaryBusinessLogicContract(_salaryStorageContract.Object, _installStorageContract.Object, _postStorageContract.Object, _workerStorageContract.Object, new Mock<ILogger>().Object);
     }
 
-    [SetUp]
-    public void SetUp()
+    [TearDown]
+    public void TearDown()
     {
         _salaryStorageContract.Reset();
         _installStorageContract.Reset();

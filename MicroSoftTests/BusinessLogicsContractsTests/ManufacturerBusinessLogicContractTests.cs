@@ -18,10 +18,10 @@ internal class ManufacturerBusinessLogicContractTests
     {
         _manufacturerStorageContract = new Mock<IManufacturerStorageContract>();
         _manufacturerBusinessLogicContract = new ManufacturerBusinessLogicContract(_manufacturerStorageContract.Object, new Mock<ILogger>().Object);
-    }
+    }    
 
-    [SetUp]
-    public void SetUp()
+    [TearDown]
+    public void TearDown()
     {
         _manufacturerStorageContract.Reset();
     }

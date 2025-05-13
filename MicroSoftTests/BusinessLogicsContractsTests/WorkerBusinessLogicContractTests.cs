@@ -20,8 +20,8 @@ internal class WorkerBusinessLogicContractTests
         _workerBusinessLogicContract = new WorkerBusinessLogicContract(_workerStorageContract.Object, new Mock<ILogger>().Object);
     }
 
-    [SetUp]
-    public void SetUp()
+    [TearDown]
+    public void TearDown()
     {
         _workerStorageContract.Reset();
     }

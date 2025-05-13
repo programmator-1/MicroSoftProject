@@ -18,10 +18,10 @@ internal class InstallBusinessLogicContractTests
     {
         _installStorageContract = new Mock<IInstallStorageContract>();
         _installBusinessLogicContract = new InstallBusinessLogicContract(_installStorageContract.Object, new Mock<ILogger>().Object);
-    }
+    }   
 
-    [SetUp]
-    public void SetUp()
+    [TearDown]
+    public void TearDown()
     {
         _installStorageContract.Reset();
     }

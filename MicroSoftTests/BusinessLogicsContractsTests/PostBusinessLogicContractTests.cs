@@ -21,8 +21,8 @@ internal class PostBusinessLogicContractTests
         _postBusinessLogicContract = new PostBusinessLogicContract(_postStorageContract.Object, new Mock<ILogger>().Object);
     }
 
-    [SetUp]
-    public void SetUp()
+    [TearDown]
+    public void TearDown()
     {
         _postStorageContract.Reset();
     }

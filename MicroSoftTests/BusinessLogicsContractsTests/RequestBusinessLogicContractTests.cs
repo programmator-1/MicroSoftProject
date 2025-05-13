@@ -20,8 +20,8 @@ internal class RequestBusinessLogicContractTests
         _requestBusinessLogicContract = new RequestBusinessLogicContract(_requestStorageContract.Object, new Mock<ILogger>().Object);
     }
 
-    [SetUp]
-    public void SetUp()
+    [TearDown]
+    public void TearDown()
     {
         _requestStorageContract.Reset();
     }

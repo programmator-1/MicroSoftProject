@@ -21,8 +21,8 @@ internal class ProductBusinessLogicContractTests
         _productBusinessLogicContract = new ProductBusinessLogicContract(_productStorageContract.Object, new Mock<ILogger>().Object);
     }
 
-    [SetUp]
-    public void SetUp()
+    [TearDown]
+    public void TearDown()
     {
         _productStorageContract.Reset();
     }
